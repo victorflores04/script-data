@@ -5,8 +5,8 @@ list_state_us = ['United States', 'Alabama', 'Alaska', 'American Samoa', 'Arizon
 list_state_us_short = ['AL', 'AK', 'AS', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE', 'DC', 'FL', 'GA', 'GU', 'HI', 'ID', 'IL', 'IN', 'IA', 'KS', 'KY', 'LA', 'ME', 'MD', 'MA', 'MI', 'MN', 'MS', 'MO', 'MT', 'NE', 'NV', 'NH', 'NJ', 'NM', 'NY', 'NC', 'ND', 'MP', 'OH', 'OK', 'OR', 'PA', 'PR', 'RI', 'SC', 'SD', 'TN', 'TX', 'UT', 'VT', 'VI', 'VA', 'WA', 'WV', 'WI', 'WY']
 
 # csv file name
-filename = input('¿Agregar ruta del archivo inicial?')
-filenamedic= input('¿Agregar ruta final del archivo inicial?')
+filename = input('Add initial file path?')
+filenamedic= input('Add the final file path and file name?')
 # filename = 'us_customers.csv'
 # csv data
 custom_list = []
