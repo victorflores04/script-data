@@ -16,7 +16,7 @@ with open(filename, 'r') as File:
     custom_list = list(us_customer_reader)
     print('<------Init---filter------>')
     with open(filenamedic, 'w', newline='') as csvFile:
-        fieldnames = ['First Name', 'Last Name', 'State', 'Phone', 'Email', 'Address']
+        fieldnames = ['Email', 'Phone', 'First Name', 'Last Name', 'State']
         writer = csv.DictWriter(csvFile, fieldnames=fieldnames)
         writer.writeheader()
         try:
@@ -26,8 +26,8 @@ with open(filename, 'r') as File:
                     if len(custom_list[index]['Phone']) == 10:
                         custom_list[index]['Phone'] = '1' + custom_list[index]['Phone']
                 writer.writerow(
-                        {'First Name': custom_list[index]['First Name'], 'Last Name': custom_list[index]['Last Name'],
-                         'State': custom_list[index]['State'], 'Phone': custom_list[index]['Phone'], 'Email': custom_list[index]['Email'], 'Address': custom_list[index]['Address']})
+                        {'Email': custom_list[index]['Email'], 'Phone': custom_list[index]['Phone'], 'First Name': custom_list[index]['First Name'], 'Last Name': custom_list[index]['Last Name'],
+                         'State': custom_list[index]['State']})
             print('Finish---filter')
         except csv.Error as e:
             sys.exit('file {}, newline {}: {}'.format(filename, us_customer_reader.line_num, e))
