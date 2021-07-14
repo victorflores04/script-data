@@ -2,6 +2,7 @@
 ### Pre-requirements 📋
 ```
 Install to https://www.python.org/
+
 ```
 ### Installation 🔧
 ```
@@ -12,6 +13,12 @@ $ python scripts.py
 ##Starting  🚀
 ```
 python scripts.py
+------------------
+user windows
+add encoding="utf8"
+example:
+(filename, 'r',encoding="utf8")
+(filenamedic, 'w', newline='',encoding="utf8")
 ```
 ## Running the tests ⚙️
 ```
